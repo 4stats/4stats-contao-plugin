@@ -1,0 +1,4 @@
+<script type="text/javascript">
+var _fss=_fss||{}; _fss.siteId = <?php echo $this->id; ?>;
+(function(){var e="fourstats",a=window,c=["track","identify","config","register"],b=function(){var d=0,f=this;for(f._fs=[],d=0;c.length>d;d++){(function(j){f[j]=function(){return f._fs.push([j].concat(Array.prototype.slice.call(arguments,0))),f}})(c[d])}};a[e]=a[e]||new b;var i=document;var h=i.createElement("script");h.type="text/javascript";h.async=true;h.src="http"+("https:"==document.location.protocol?"s":"")+"://4stats.de/track.js";var g=i.getElementsByTagName("script")[0];g.parentNode.insertBefore(h,g)})();
+</script>

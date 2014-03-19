@@ -1,0 +1,43 @@
+<div class="wrap">
+	<div id="content4stats">
+		<h3><?php echo $this->day_performance; ?></h3>
+		<div id="chart_visitor_div" style="height: 180px; width: 100%;"></div>
+		<br>
+
+		<table class="table-stats" id="fs_overview_stats">
+			<thead>
+				<tr>
+				</tr>
+			</thead>
+			<tbody>
+			</tbody>
+		</table>
+	
+		<br>
+		<h3><?php echo $this->performance_month; ?></h3>
+		<div id="chart_visitor_div_last31" style="height: 180px; width: 100%;"></div>
+	
+		<br>
+	
+		<div id="fs-box-row">
+		</div>
+
+		<h3><?php echo $this->performance_year; ?></h3>
+		<div id="chart_visitor_div_year" style="height: 180px; width: 100%;"></div>
+
+		<br>
+	
+		<div>
+			<table class="table-stats" id="fs-visitor-log">
+				<thead><tr><th colspan="3"><?php echo $this->last_25_visitors; ?></th></tr></thead>
+				<tbody></tbody>
+			</table>
+		</div>
+	</div>
+</div>
+<script type="text/javascript">
+jQuery(document).ready(function() { 
+	fs = new fourStats(<?php echo $this->id; ?>, '<?php echo $this->api_key; ?>', '<?php echo $GLOBALS['TL_LANGUAGE']; ?>', '<?php echo date("D, d M Y H:i:s"); ?>');
+	fs.statsPage();
+});				
+</script>

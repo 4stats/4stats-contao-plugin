@@ -1,0 +1,250 @@
+/* Layout
+-------------------------------------------------- */
+
+#content4stats {
+	padding: 10px;
+}
+
+#content4stats a {
+	font-size: 1em;
+}
+
+.fs_good,
+.fs_bad,
+.fs_noc { 
+	font-size: 12px;
+	margin-right: 5px;
+}
+
+.fs_good { 
+	background: url(../images/up.gif) top left no-repeat;
+	padding-left: 16px;
+	color:#008800;
+}
+.fs_bad { 
+	background: url(../images/down.gif) top left no-repeat;
+	padding: 0 5px 0 16px;
+	color:#880000;
+}
+.fs_noc { 
+	background: url(../images/equal.gif) top left no-repeat;
+	padding-left: 16px;
+	color:#eeaa00;
+}
+
+
+/* Stats Table
+-------------------------------------------------- */
+
+.table-stats {
+    border-spacing: 0;
+    width: 100%;
+    clear: both;
+    margin: 0;
+}
+
+.table-stats * {
+    word-wrap: break-word
+}
+
+.table-stats a {
+    text-decoration: none
+}
+
+.table-stats td, .table-stats th {
+    padding: 8px 10px
+}
+
+.table-stats tfoot th {
+    border-bottom: 0
+}
+
+.table-stats .no-items td {
+    border-bottom-width: 0
+}
+
+.table-stats td {
+    vertical-align: top
+}
+
+.table-stats td, .table-stats td p, .table-stats td ol, .table-stats td ul {
+    font-size: 13px;
+    line-height: 1.5em
+}
+
+.table-stats th {
+    text-align: left;
+    line-height: 1.3em;
+    font-size: 12px;
+	font-weight: 600;
+}
+
+.table-stats td, .table-stats th {
+    color: #555;
+}
+
+.table-stats p, .table-stats ol, .table-stats ul {
+    color: #333;
+}
+
+.table-stats thead tr th {
+    color: #333;
+}
+
+.table-stats tr:nth-child(even) {
+  background-color: #fafafb;
+}
+
+.table-stats tbody tr:hover,
+.table-stats tbody tr td:hover {
+	background-color: #eeeef2;
+}
+
+
+/* Dashboard Numbers Table
+-------------------------------------------------- */
+
+table#fs_overview_stats th,
+table#fs_overview_stats td {
+	text-align: right;
+}
+
+table#fs_overview_stats tbody td.fsnum {
+	font-family: Georgia, "Times New Roman", serif;
+	line-height: 1.2em;
+	font-size: 17px;
+	color: #000;
+}
+
+table#fs_overview_stats tbody tr:first-child td.fsnum {
+	font-size: 26px;
+}
+
+table#fs_overview_stats thead tr th:first-child {
+	text-align: left;
+}
+
+table#fs_overview_stats thead tr th:first-child span {
+	font-size: 24px;
+	color: #ff6600;
+}
+
+table#fs_overview_stats .row-title {
+	line-height: 30px;
+}
+
+table#fs-visitor-log td.one { width: 20%; }
+table#fs-visitor-log td.two { width: 40%; }
+table#fs-visitor-log td.three { width: 40%; }
+table#fs-visitor-log td strong { font-weight: 600; }
+
+
+/* Boxes
+-------------------------------------------------- */
+
+div#fs-box-row {
+	position: relative;
+	overflow: hidden;
+}
+
+div#fs-box-row > div {
+	display: block;
+	width: 32%;
+	float: left;
+	margin: 0 1% 20px 0;
+	height: 350px;
+	overflow: hidden;
+	overflow-y: auto;
+	border-bottom: 1px solid #e5e5e5;
+}
+
+div#fs-box-row > div > table {
+	border: 1px solid #e5e5e5;
+}
+
+div#fs-box-row > div > table > thead > tr > th {
+	background: #efefef;
+}
+
+
+/* Browser Logos
+-------------------------------------------------- */
+.browser-logo {
+	display: inline-block;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	width: 16px;
+	height: 16px;
+	line-height: 16px;
+	vertical-align: text-top;
+	background-image: url(../images/browser-logos.png);
+	background-position: -16px 16px;
+	background-repeat: no-repeat;
+}
+.browser-google-chrome {
+	background-position: -2px 0px;
+}
+.browser-firefox {
+	background-position: -20px 0px;
+}
+.browser-opera {
+	background-position: -37px 0px;
+}
+.browser-safari,
+.browser-safari-mobile {
+	background-position: -54px 0px;
+}
+.browser-internet-explorer {
+	background-position: -71px 0px;
+}
+.browser-mozilla {
+	background-position: -89px 0px;
+}
+.browser-konqueror {
+	background-position: -107px 0px;
+}
+.browser-nokia,
+.browser-nokia-browser {
+	background-position: -125px 0px;
+}
+.browser-wosbrowser {
+	background-position: -142px 0px;
+}
+.browser-unbekannt {
+	background-position: -160px 0px;
+}
+
+/* OS Logos
+-------------------------------------------------- */
+
+.os-logo {
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	line-height: 16px;
+	vertical-align: text-top;
+	background-image: url(../images/os-logos.png);
+	background-position: -16px 16px;
+	background-repeat: no-repeat;
+}
+.os-macintosh {
+	background-position: 0px 0px;
+}
+.os-windows {
+	background-position: -16px 0px;
+}
+.os-linux {
+	background-position: -32px 0px;
+}
+.os-android {
+	background-position: -48px 0px;
+}
+.os-ios {
+	background-position: -64px 0px;
+}
+
+
